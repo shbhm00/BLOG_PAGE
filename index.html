@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="A">
+    <center>
+        <div class="blog_img"><img src="html/NS logo.png" style="width: 100%;"></div>
+    </center>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="html/10_reason.html"><img src="img/a.jpg" class="slider_image" width="1460px" height="700px"></a>
+            <div class="Reason">Why you choose NamasteSir</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <a href="html/10_reason.html"><img src="img/b.png" class="slider_image" width="1460px"></a>
+            <div class="Reason">Caption Two</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <a href="html/10_reason.html"><img src="img/c.png" class="slider_image" width="1460px"></a>
+            <div class="Reason">Caption Three</div>
+        </div>
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+</div>
+<!--Blogging Part-->
+  <div class="row">
+    <div class="leftcolumn">
+        <div class="card" >
+            <div class="heading"><a href="html/page1.html"><h2>9 NAMASTESIR SERVICES TO MAKE YOUR LIFE
+                EASIER</h2></a></div>
+            <div class="fakeimg"><a href="html/page1.html"><img src="img/3.jpg" class="script" height="400px" width="870px"> </a></div>
+            <p>
+                <!--Content of the Heading-->
+                NamasteSir is an online platform that provides home services very
+professionally so that you can get unbeatable services at home with
+amazing experience without wasting any energy and a lot of money......
+            </p>
+            <a href="html/page1.html"><button>Read more</button></a>
+        </div>
+        <br>
+        <div class="card" >
+            <a href="html/page2.html"><h2>Why should you prefer NS over A local service</h2></a>
+            <div class="fakeimg"><a href="html/page2.html"><img src="img/4.jpeg" height="200px" width="870px"></a></div>
+            <p>
+                <!--Content of Heading-->
+                NamasteSir is an integrated online platform which provides services like
+online electrician booking, hire a driver, good appliance repairer online,
+expert salon near you and many more, with a very professional manner, so
+that you can get unbeatable services at your home without wasting energy
+and a lot of money....
+            </p>
+            <!--Link of the button-->
+            <a href="html/page2.html"><button >Read more</button></a>
+        </div>
+        <div class="card" >
+            <a href="html/page3.html"><h2>7 THINGS YOU SHOULD CHECK BEFORE HIRING A DRIVER</h2></a>
+            <div class="fakeimg"><a href="html/page3.html"><img src="img/6.jpeg" height="200px" width="870px"></a></div>
+            <p>
+                <!--Content of Heading-->
+                Hiring a driver has never been so easy because of many safety issues. So
+you always need to have some precautions and check these 7 things
+before booking a driver.....
+            </p>
+            <!--Link of the button-->
+            <a href="html/page3.html"><button >Read more</button></a>
+        </div>
+        <div class="card" >
+            <a href="html/page4.html"><h2>Reasons Why you need NS</h2></a>
+            <div class="fakeimg"><a href="html/page4.html"><img src="img/7.jpeg" height="200px" width="870px"></a></div>
+            <p>
+                <!--Content of Heading-->
+                We all know that the CORONA virus has taken over the whole world. And
+situations outside the home has become worse and very dangerous. It is
+not safe to go outside and do our daily work. So we all need to be at home,
+away from the crowd to be safe.......
+            </p>
+            <!--Link of the button-->
+            <a href="html/page4.html"><button >Read more</button></a>
+        </div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2 style="text-decoration: underline; color: brown; font-weight: bolder; font-size: 50px;">Service's</h2>
+        </div>
+        <div class="card">
+            <div class="myDiv"><h2 >Driver</h2></div>
+            <div class="hide"><p>Looking for drivers to hire for a long journey, or the services of a driver for your car, don't worry your search comes to an end with namaste sir. We bring to you the facility of booking drivers online, so that you can hire drivers for all your needs. Start exploring the quick and easy services provided by the drivers near you. We facilitate your needs by customizing your requests to book drivers per hourly basis and also the drivers on demand in Jaipur, Delhi and even in the city you live. Utilize our services of getting drivers on rent without much trouble</p>
+            <p>Hi, Tech-mind! 
+                Searching for "A Driver to hire" ? or looking for "A driver near you" to take you to your required destination ? 
+                
+                Keep it cool! We, at Namaste Sir, have got you covered for a smooth and comfortable Car ride. Because we provide professional & well-trained drivers for car to take you to your destination even during this pandemic by following all the hygiene norms.
+                
+                We provide car drivers on rent in Jaipur, Kota, Sawai Madhopur and in your city too. Download our app or simply visit our website(https://namastesir.in) to grab yourself a comfortable ride with our "Hire a Driver" facility</p></div>
+        </div>
+        <div class="card">
+            <h2 class="mydiv1">Pandit Ji</h2>
+            <p class="hide1">Hello everyone out there. Did you just bought a new house and Searching for a ''Pandit ji online'' for your Greh pravesh pooja or looking for ''Online Pandit'' to make your lockdown waali shaadi more full of rituals. 
+
+                Don't worry, and get ready because, we at Namaste Sir are here to provide you everything. Our services of ''Online Pandit'' will definitely help you in doing your good works with full of good lucks.
+                Be it ''Lakshmi Pooja'' , ''Satya narayana Pooja'' or ''Greh Pravesh'' we have vast services to facilitate you.
+                
+                Our doorstep service will not only make your work easier but also takes care of your health. Our pandit ji will reach your destination with proper sanitization.
+                Download our app or  <a href="https://namastesir.in">visit our website</a>   to book Pandit ji online</p>
+        </div>
+        <div class="card">
+            <h2 class="mydiv2">Electrician</h2>
+            <p class="hide2">Neel is 18 year old. 
+                He's very fond of mobile applications and continuously researches what's best in the market. 
+                Last night, His mother instructed him to call an electrician to repair the faulty Fan switch. 
+                He browsed through Namaste Sir and searched for an electrician near his house. After reading all the norms, he confirmed the electrician home service within a minute and scheduled the electrician for the next day. 
+                This clever & vital step of Neel brought a smile on his mother's face. 
+                Neel is intelligent.
+                Be like Neel. 
+                
+                
+                Hey dear!
+                Looking for an electrician online? Then don't go here and there because Namaste Sir is here. Because we provide a variety of professional services to comfort you out even during this Pandemic without compromising with your health.
+                
+                Try Namaste Sir today. Download the app or  <a href="https://namastesir.in">simply visit the website</a>  to comfort yourself with our professional home services</p>
+        </div>
+        <div class="card">
+            <h2 class="mydiv3">Plumber</h2>
+            <p class="hide3">Banku being the youngest of his family, always get scolded for not doing household chores.
+                Leakage of taps, broken pipes, kitchen sink... All these problems were bombarding towards him by her mother
+                - Banku fix the pipes
+                - Banku call the plumber
+                - Banku stop the leakage
+                - Banku fix the broken taps 
+                Frustrated Banku toop a wise step by using his smartphone.
+                He tried his attempt by surfing Plumber near me plumber work and get into ''Namaste Sir'', booked his slot for the very next day and enjoyed the service. 
+                Her mother was satisfied and happy with the ''Namaste Sir Services'' and this also helps Banku in receiving appreciations from her mother. 
+                You all can also fix your problems and make your bathroom, kitchen pipes leakage free by sitting at home and downloading the app.
+                
+                Namaste Sir provides you with the vast range of plumber online, book according to your need and enjoy our ''Doorstep plumber services''.
+                 <a href="https://namastesir.in">Visit</a>  or download the app and book your slot right now. !! </p>
+        </div>
+        <div class="card">
+            <h2 class="mydiv4">Event Planner</h2>
+            <p class="hide4">Hey Rahul! Why are you looking so tensed ? It's your mom's birthday after two days. So cheer it up buddy !!
+
+                Rahul :- How could I ? It's my mother's birthday and from the last one week, I am searching for an event planner that could help me out in the planning process. 
+                
+                Sachin :- Mate, I think you haven't heard the name NamasteSir. 
+                
+                Rahul :- NamasteSir? What is this ? Who are they ?
+                
+                Sachin :- NamasteSir is an integrated online platform that provides various professional services such as event planning, event management, car driver for hire, electrician, etc. at a Very reasonable price. Their event planner for Birthday is what you need at this time. So check out their website and book it now to experience the best. 
+                
+                Rahul :- Yeah buddy! Thanks! I booked an event planner for my mom's birthday. Mom would be so happy on her special day. 
+                
+                
+                Lockdown & this pandemic has hit us & our loved ones hard. But as the conditions are gradually improving, then surprise your loved ones and shower them with love & Care with NamasteSir's Event Planner service. We provide event planner for a variety of special occasions like event planner for Birthday parties, event planner for wedding, event planner for baby shower and a lot more to take care of your loved one's special moments. 
+                
+                
+                In addition to this, we provide decoration services for birthday parties as well. Professional - experienced decorators that'll help you make your birthday a lot more special. Our decorative service varies from spiritual Ganpati event decoration to a beautiful Wedding decoration. 
+                
+                So download the app or <a href=" https://namastesir.in">simply visit our website </a> to book the best event planner in your city to make your special day worth remembering. Till now, we provide specialist event planners in Jaipur, Udaipur, Sawai Madhopur, Kota, etc. 
+                
+                
+                NamasteSir, at your fingertips!!</p>
+        </div>
+    </div>
+  </div>
+  
+ 
+    </div>       
+</body>
+</html>

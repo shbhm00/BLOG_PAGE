@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  margin-top: 10px;
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+a{
+  text-decoration: none;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 72%;
+}
+/* Fake image */
+.fakeimg {
+  width: 100%
+}
+.fakeimg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Review img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+}
+.nam{
+  max-width: 700px;
+  height: auto;
+}
+/*first letter decoration*/
+.First_letter{
+  font-family: "Sacramento";
+  font-size: 60px;
+  font-weight: 600;
+}
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   border-radius: 25px;
+   border: 2px solid navy;
+   padding: 20px; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.
+/* ordered list decoration */
+.row{
+  background-color: white;
+}
+/* Ordered list*/
+ol{
+  font-family: 'Poppins';
+  width: 60%;
+  margin-left: 20px;
+  font-size: large;
+
+}
+/* unordered list*/
+ul{
+  font-size: large;
+  font-family: "Poppins";
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.right{
+width: 25%;
+float: right;
+}
+
+/* Paragraph of Page1 */
+p{
+  margin-top: 50px;
+  margin-left: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  width: 80%;
+  font-size: large;
+}
+
+.p1{
+font-family: 'Poppins';
+margin-left: 15px;
+width: 80%;
+font-weight: 580;
+font-size: large;
+}
+h2{
+  font-family: 'Luckiest Guy';
+  color: rgb(5, 59, 59);
+  font-size: xxx-large;
+  
+}
+
+
+.popular{
+margin-top: 20px;
+padding: 20px;
+background-color: white;
+border-radius: 25px;
+border: 2px solid navy;
+padding: 20px; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pplr_post{
+padding: 10px;
+margin-top: 10px;
+background-color: white;
+border-radius: 25px;
+border: 2px solid navy;
+padding: 20px; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pplr_post img{
+width: 50px;
+height: 50px;
+
+}
+
+.A {
+border-radius: 25px;
+border: 2px solid navy;
+padding: 20px; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.upper{
+border-radius: 25px;
+border: 2px solid navy;
+padding: 20px;
+margin-bottom: 10px; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .right{
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .example {background:white;}
+  .fakeimg img{
+    width: 100%;
+  }
+  .right{
+    float: left;
+    width: 100%;
+  }
+}
+/* iPad Portrait */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .main .about {
+      width: 49%;
+      margin-right: 7px;
+  }
+  .right{
+    float: left;
+    width: 100%;
+  }
+}
+
+/* iPad Landscape */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main .about {
+      width: 49%;
+      margin-right: 9px;
+  }
+}
